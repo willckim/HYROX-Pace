@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "HYROXPace",
+    "slug": "hyrox-pace",
+    "version": "1.0.0",
+    "scheme": "hyroxpace",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hyroxpace.app",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "To optimize your pacing and prevent redlining",
+        "NSHealthUpdateUsageDescription": "To track your race-day performance"
+      },
+      "entitlements": {
+        "com.apple.developer.healthkit": true
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.hyroxpace.app",
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "apiUrl": "http://localhost:8000",
+      "eas": {
+        "projectId": "c38ee654-03f7-44fe-9410-68dd90fa192c"
+      }
+    },
+    "plugins": [
+      "expo-secure-store"
+    ]
+  }
+}
